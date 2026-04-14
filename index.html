@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>C³ SNIST — Cloud Community Club</title>
+<meta name="description" content="The Cloud Community Club at SNIST — 250+ hackathon participants, 150+ members, #Development2Deployment. Join us."/>
+<meta property="og:title" content="Cloud Community Club (C³) — SNIST"/>
+<meta property="og:description" content="Student-driven tech community at Sreenidhi Institute of Science and Technology."/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://snist.cloudcommunityclub.tech/"/>
+<meta property="og:image" content="https://snist.cloudcommunityclub.tech/assets/og-banner.png"/>
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml"/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- cursor -->
+<div id="cursor"></div>
+<div class="dot-grid"></div>
+
+<!-- ════════ NAV ════════ -->
+<nav id="navbar">
+  <div class="nav-links nav-left">
+    <a href="#about">About</a>
+    <a href="#changelog">Changelog</a>
+  </div>
+  <a href="#hero" class="nav-logo">
+    <img src="assets/favicon.svg" alt="C³ Logo" class="nav-logo-img" />
+    <span class="nav-logo-text">C³ SNIST</span>
+  </a>
+  <div class="nav-links nav-right">
+    <a href="#events">Events</a>
+    <a href="#team">Team</a>
+    <a href="#join" class="nav-btn">Join Us</a>
+  </div>
+  <button class="hamburger" id="ham" aria-label="Toggle menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="mobile-nav" id="mob-nav">
+  <a href="#about">About</a>
+  <a href="#changelog">Changelog</a>
+  <a href="#events">Events</a>
+  <a href="#team">Team</a>
+  <a href="#join" style="color:var(--cyan);">Join Us →</a>
+</div>
+
+<!-- ════════ HERO ════════ -->
+<section id="hero" class="hero">
+  <div class="hero-glow"></div>
+  
+  <div class="hero-floating-badges">
+    <div class="glass-badge float-1" data-speed="0.04">
+      <div class="gb-inner">
+        <div class="gb-icon" aria-hidden="true">👥</div>
+        <div class="gb-text">
+           <span class="gb-title">150+ Members</span>
+           <span class="gb-sub">Active community</span>
+        </div>
+      </div>
+    </div>
+    <div class="glass-badge float-2" data-speed="-0.03">
+      <div class="gb-inner">
+        <div class="gb-icon" aria-hidden="true">⚡</div>
+        <div class="gb-text">
+           <span class="gb-title">Deploy Real Tech</span>
+           <span class="gb-sub">Development2Deployment</span>
+        </div>
+      </div>
+    </div>
+    <div class="glass-badge float-3" data-speed="0.02">
+      <div class="gb-inner">
+        <div class="gb-icon" aria-hidden="true">☁️</div>
+        <div class="gb-text">
+           <span class="gb-title">5 Active Projects</span>
+           <span class="gb-sub">Cloud & AI focused</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-content">
+
+    <h1 class="hero-title">
+      <span class="title-line t-cloud">Cloud</span>
+      <span class="title-line t-comm">Community</span>
+      <span class="title-line t-club">Club <span>(C³)</span></span>
+    </h1>
+    <div class="hero-badge decrypt-badge">
+      <span class="hero-badge-dot"></span>
+      <span class="hacker-text" data-value="#Development2Deployment">#Development2Deployment</span>
+    </div>
+    <div class="hero-typewriter">
+      <span class="typewriter-prefix">&gt; Let's</span>
+      <span class="typewriter-word" id="tw-word">Automate</span>
+      <span class="typewriter-cursor"></span>
+    </div>
+
+    <div class="hero-btns">
+      <a href="#join" class="btn-primary">Join Now</a>
+      <a href="#changelog" class="btn-secondary">View Changelog →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ════════ MARQUEE STRIP ════════ -->
+<div class="marquee-section">
+  <div class="marquee-track">
+    <div class="marquee-item hi"><span class="marquee-dot"></span>Cloud Computing</div>
+    <div class="marquee-item"><span class="marquee-dot"></span>AWS &amp; GCP</div>
+    <div class="marquee-item hi"><span class="marquee-dot"></span>AI Hack Day 2025</div>
+    <div class="marquee-item"><span class="marquee-dot"></span>250+ Participants</div>
+    <div class="marquee-item hi"><span class="marquee-dot"></span>Open Source</div>
+    <div class="marquee-item"><span class="marquee-dot"></span>Active Projects</div>
+    <div class="marquee-item hi"><span class="marquee-dot"></span>SNIST</div>
+    <div class="marquee-item"><span class="marquee-dot"></span>Development2Deployment</div>
+    <div class="marquee-item hi"><span class="marquee-dot"></span>Cloud Computing</div>
+    <div class="marquee-item"><span class="marquee-dot"></span>AWS &amp; GCP</div>
+    <div class="marquee-item hi"><span class="marquee-dot"></span>AI Hack Day 2025</div>
+    <div class="marquee-item"><span class="marquee-dot"></span>250+ Participants</div>
+    <div class="marquee-item hi"><span class="marquee-dot"></span>Open Source</div>
+    <div class="marquee-item"><span class="marquee-dot"></span>Active Projects</div>
+    <div class="marquee-item hi"><span class="marquee-dot"></span>SNIST</div>
+    <div class="marquee-item"><span class="marquee-dot"></span>Development2Deployment</div>
+  </div>
+  <div class="marquee-track-r">
+    <div class="marquee-item"><span class="marquee-dot"></span>Virtual Labs</div>
+    <div class="marquee-item hi"><span class="marquee-dot"></span>AiXOS</div>
+    <div class="marquee-item"><span class="marquee-dot"></span>Slim LLMs</div>
+    <div class="marquee-item hi"><span class="marquee-dot"></span>Offline Payment Wallet</div>
+    <div class="marquee-item"><span class="marquee-dot"></span>Distributed Computing</div>
+    <div class="marquee-item hi"><span class="marquee-dot"></span>150+ Members</div>
+    <div class="marquee-item"><span class="marquee-dot"></span>5 Active Projects</div>
+    <div class="marquee-item hi"><span class="marquee-dot"></span>Collaborative Learning</div>
+    <div class="marquee-item"><span class="marquee-dot"></span>Virtual Labs</div>
+    <div class="marquee-item hi"><span class="marquee-dot"></span>AiXOS</div>
+    <div class="marquee-item"><span class="marquee-dot"></span>Slim LLMs</div>
+    <div class="marquee-item hi"><span class="marquee-dot"></span>Offline Payment Wallet</div>
+    <div class="marquee-item"><span class="marquee-dot"></span>Distributed Computing</div>
+    <div class="marquee-item hi"><span class="marquee-dot"></span>150+ Members</div>
+    <div class="marquee-item"><span class="marquee-dot"></span>5 Active Projects</div>
+    <div class="marquee-item hi"><span class="marquee-dot"></span>Collaborative Learning</div>
+  </div>
+</div>
+
+<!-- ════════ ABOUT ════════ -->
+<section id="about" class="section">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <p class="section-eyebrow">About C³</p>
+        <h2 class="section-heading">A community built to <em>empower</em>.</h2>
+        <p>The Cloud Community Club (C³) is a <strong>student-driven initiative at SNIST</strong>. We exist to tear down the wall between theoretical college knowledge and actual, hands-on application.</p>
+        <p class="interactive-sub" style="margin-bottom: 16px;">
+          We don't just study technology <span class="slash">//</span> <strong class="glow-word">we deploy it.</strong><br> 
+          We specialize in aggressive, real-world engineering through <span class="tag-cloud">Cloud</span>, applied <span class="tag-ai">AI</span>, and <span class="tag-os">Open Source</span> integration.
+        </p>
+        <p>This is your platform to innovate, collaborate, and build the future!</p>
+      </div>
+      <div class="stats-grid reveal reveal-delay-2">
+        <div class="stat-card">
+          <span class="stat-num" data-count="250">0</span>
+          <span class="stat-label">Hackathon Participants</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-num" data-count="150">0</span>
+          <span class="stat-label">Community Members</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-num">5</span>
+          <span class="stat-label">Active Projects</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════ MOTO ════════ -->
+<section class="moto-section reveal">
+  <div class="container">
+    <div class="moto-wrap">
+      <div class="moto-front">We don't recruit people.</div>
+      <div class="moto-back">We <em>publish</em> work.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════ ACTIVE PROJECTS ════════ -->
+<div class="projects-section reveal">
+  <div class="container">
+    <p class="projects-heading">Active Projects — Building the Future</p>
+    <div class="projects-strip">
+      <div class="project-chip"><span class="project-chip-dot"></span>Virtual Labs</div>
+      <div class="project-chip"><span class="project-chip-dot"></span>AiXOS</div>
+      <div class="project-chip"><span class="project-chip-dot"></span>Offline Payment Wallet</div>
+      <div class="project-chip"><span class="project-chip-dot"></span>Slim LLMs</div>
+      <div class="project-chip"><span class="project-chip-dot"></span>Distributed Computing Cluster</div>
+    </div>
+  </div>
+</div>
+
+<!-- ════════ THE ORBIT (CHANGELOG) ════════ -->
+<section id="changelog" class="section">
+  <!-- Glowing Cloud background element -->
+  <div class="changelog-nebula"></div>
+  <div class="container">
+    <div class="reveal centered" style="text-align:center;">
+      <p class="section-eyebrow">The Changelog</p>
+      <h2 class="section-heading">Not just a timeline.<br>A <em>continuous orbit</em>.</h2>
+    </div>
+    
+    <div class="changelog-organic">
+      
+      <!-- Stage 1 -->
+      <div class="org-card reveal">
+         <div class="org-date">DONE</div>
+         <h3 class="org-title">Club Formation</h3>
+         <p class="org-desc">Officially established C³ at SNIST with a founding team and faculty advisor. The base environment was successfully configured.</p>
+         <div class="org-glow"></div>
+      </div>
+      
+      <!-- Stage 2 -->
+      <div class="org-card reveal reveal-delay-1">
+         <div class="org-date">FEB 22, 2025</div>
+         <h3 class="org-title">AI Hack Day 2025</h3>
+         <p class="org-desc">A national AI hackathon with 250+ participants and 80+ project submissions. Industry mentors, incredible energy, and flawless execution.</p>
+         <div class="org-glow"></div>
+      </div>
+      
+      <!-- Stage 3 -->
+      <div class="org-card reveal reveal-delay-2">
+         <div class="org-date">MAR 10, 2025</div>
+         <h3 class="org-title">Inaugural Open Session</h3>
+         <p class="org-desc">C³ officially inaugurated at Seminar Hall-2 with 150+ attendees. An introduction to Active Projects, the club's core vision, and a live Q&amp;A.</p>
+         <div class="org-glow"></div>
+      </div>
+      
+      <!-- Stage 4 -->
+      <div class="org-card active reveal reveal-delay-2">
+         <div class="org-date pulse-text">ACTIVE NOW</div>
+         <h3 class="org-title">Recruitment Drive &amp; Active Projects</h3>
+         <p class="org-desc">Onboarding the next generation of builders and explicitly launching 5 hardcore projects — Virtual Labs, AiXOS, Offline Payment Wallet, Slim LLMs, and Distributed Computing.</p>
+         <div class="org-glow"></div>
+      </div>
+      
+      <!-- Stage 5 -->
+      <div class="org-card planned reveal reveal-delay-3">
+         <div class="org-date">2026 HORIZON</div>
+         <h3 class="org-title">Cloud Deep Dive 2026</h3>
+         <p class="org-desc">Intensive masterclasses on infrastructure targeting AWS, GCP, and Azure. Taking students from zero to scalable multi-tier architectures.</p>
+         <div class="org-glow"></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ════════ EVENTS ════════ -->
+<section id="events" class="section">
+  <div class="container">
+    <div class="reveal">
+      <p class="section-eyebrow">Events</p>
+      <h2 class="section-heading">What we've <em>accomplished</em><br>and what's coming next.</h2>
+    </div>
+    <div class="events-grid">
+
+      <article class="event-card reveal" aria-label="AI Hack Day 2025">
+        <div class="event-card-top">
+          <div class="event-date-block">
+            <div><div class="event-month">Feb</div><div class="event-day">22</div></div>
+          </div>
+        </div>
+        <div class="event-body">
+          <p class="event-label">Hackathon 🤖</p>
+          <h3 class="event-title">AI Hack Day 2025</h3>
+          <p class="event-desc">A national AI innovation sprint — 250+ participants, 80+ project submissions, industry mentors, and amazing energy.</p>
+        </div>
+      </article>
+
+      <article class="event-card reveal reveal-delay-1" aria-label="C³ Open Session">
+        <div class="event-card-top">
+          <div class="event-date-block">
+            <div><div class="event-month">Mar</div><div class="event-day">10</div></div>
+          </div>
+        </div>
+        <div class="event-body">
+          <p class="event-label">Open Session</p>
+          <h3 class="event-title">C³ Open Session</h3>
+          <p class="event-desc">Official inauguration with 150+ attendees — introduction to active projects, club vision, and interactive Q&amp;A.</p>
+        </div>
+      </article>
+
+      <article class="event-card reveal reveal-delay-2" aria-label="Active Projects Kickoff">
+        <div class="event-card-top">
+          <div class="event-date-block">
+            <div><div class="event-month">Mar</div><div class="event-day">20</div></div>
+          </div>
+        </div>
+        <div class="event-body">
+          <p class="event-label">Kickoff 💻</p>
+          <h3 class="event-title">Active Projects Kickoff</h3>
+          <p class="event-desc">Launching 5 hands-on projects: Virtual Labs, AiXOS, Offline Payment Wallet, Slim LLMs, and Distributed Computing Cluster.</p>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ════════ TEAM ════════ -->
+<section id="team" class="section section-alt">
+  <div class="container">
+    <div class="reveal centered" style="text-align:center;">
+      <p class="section-eyebrow">Our Team</p>
+      <h2 class="section-heading">The people driving<br>C³ <em>forward</em>.</h2>
+    </div>
+    <div class="team-grid">
+      <!-- 1 -->
+      <div class="team-card reveal">
+        <div class="team-header">
+          <div class="team-avatar">NR</div>
+          <div class="team-tag tag-lead">root</div>
+        </div>
+        <div class="team-name">Nandhan Rao</div>
+        <div class="team-role">President</div>
+        <div class="team-focus">Strategic Vision & Cloud Architecture</div>
+      </div>
+      <!-- 2 -->
+      <div class="team-card reveal reveal-delay-1">
+        <div class="team-header">
+          <div class="team-avatar">NA</div>
+          <div class="team-tag tag-admin">admin</div>
+        </div>
+        <div class="team-name">Nikhil Anand</div>
+        <div class="team-role">Vice President</div>
+        <div class="team-focus">Operations & Execution Planning</div>
+      </div>
+      <!-- 3 -->
+      <div class="team-card reveal reveal-delay-2">
+        <div class="team-header">
+          <div class="team-avatar">HV</div>
+          <div class="team-tag tag-sys">sys</div>
+        </div>
+        <div class="team-name">Harshitha V</div>
+        <div class="team-role">General Secretary</div>
+        <div class="team-focus">Administration & Process Flow</div>
+      </div>
+      <!-- 4 -->
+      <div class="team-card reveal reveal-delay-3">
+        <div class="team-header">
+          <div class="team-avatar">VA</div>
+          <div class="team-tag tag-net">net</div>
+        </div>
+        <div class="team-name">Vaman Akhil</div>
+        <div class="team-role">Community Manager</div>
+        <div class="team-focus">Member Growth & Outreach</div>
+      </div>
+      <!-- 5 -->
+      <div class="team-card reveal">
+        <div class="team-header">
+          <div class="team-avatar">S</div>
+          <div class="team-tag tag-dev">dev</div>
+        </div>
+        <div class="team-name">Sathwik</div>
+        <div class="team-role">Technical Head</div>
+        <div class="team-focus">Core Engineering & DevOps</div>
+      </div>
+      <!-- 6 -->
+      <div class="team-card reveal reveal-delay-1">
+        <div class="team-header">
+          <div class="team-avatar">HV</div>
+          <div class="team-tag tag-rnd">rnd</div>
+        </div>
+        <div class="team-name">Harshan Varma</div>
+        <div class="team-role">R&D Head</div>
+        <div class="team-focus">Research & Deep Tech</div>
+      </div>
+      <!-- 7 -->
+      <div class="team-card reveal reveal-delay-2">
+        <div class="team-header">
+          <div class="team-avatar">S</div>
+          <div class="team-tag tag-ops">ops</div>
+        </div>
+        <div class="team-name">Santosh</div>
+        <div class="team-role">Organizing Head</div>
+        <div class="team-focus">Event Operations & Logistics</div>
+      </div>
+      <!-- 8 -->
+      <div class="team-card reveal reveal-delay-3">
+        <div class="team-header">
+          <div class="team-avatar">SG</div>
+          <div class="team-tag tag-ux">ux</div>
+        </div>
+        <div class="team-name">T Siva Maruthi Ganesh</div>
+        <div class="team-role">Designing Head</div>
+        <div class="team-focus">UI/UX & Visual Design</div>
+      </div>
+      <!-- 9 -->
+      <div class="team-card reveal">
+        <div class="team-header">
+          <div class="team-avatar">BV</div>
+          <div class="team-tag tag-mkt">mkt</div>
+        </div>
+        <div class="team-name">B Vasundara</div>
+        <div class="team-role">Marketing Head</div>
+        <div class="team-focus">Brand Strategy & Marketing</div>
+      </div>
+      <!-- 10 -->
+      <div class="team-card reveal reveal-delay-1">
+        <div class="team-header">
+          <div class="team-avatar">B</div>
+          <div class="team-tag tag-doc">doc</div>
+        </div>
+        <div class="team-name">Bhargavi</div>
+        <div class="team-role">Documentation Head</div>
+        <div class="team-focus">Technical Writing & Archiving</div>
+      </div>
+      <!-- 11 -->
+      <div class="team-card reveal reveal-delay-2">
+        <div class="team-header">
+          <div class="team-avatar">GE</div>
+          <div class="team-tag tag-pub">pub</div>
+        </div>
+        <div class="team-name">Gone Eeshitha</div>
+        <div class="team-role">Publicity Head</div>
+        <div class="team-focus">Social Media & Public Relations</div>
+      </div>
+      <!-- 12 -->
+      <div class="team-card reveal reveal-delay-3">
+        <div class="team-header">
+          <div class="team-avatar">PK</div>
+          <div class="team-tag tag-web">web</div>
+        </div>
+        <div class="team-name">Prem Sai K</div>
+        <div class="team-role">Web Master</div>
+        <div class="team-focus">Frontend Architecture & CMS</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════ JOIN ════════ -->
+<section id="join" class="section">
+  <div class="container">
+    <div class="form-intro centered reveal">
+      <p class="section-eyebrow">Join C³</p>
+      <h2 class="section-heading" style="text-align:center; margin-bottom:16px;">
+        Ready to join the <em>cloud</em>?
+      </h2>
+      <p style="text-align:center; color:var(--muted); margin-bottom:48px;">Complete your digital profile to apply for the next cohort.</p>
+    </div>
+
+    <div class="join-hub reveal">
+      <!-- ID Preview Pane -->
+      <div class="id-preview-pane">
+        <div class="id-card" id="member-card">
+          <div class="id-card-inner">
+            <div class="id-card-top">
+              <div class="id-logo-wrap">
+                <img src="assets/favicon.svg" alt="C³" class="id-logo" />
+                <span>C³ APPLICANT</span>
+              </div>
+              <div class="id-chip"></div>
+            </div>
+            
+            <div class="id-card-mid">
+              <div class="id-field">
+                <span class="id-label">NAME</span>
+                <span class="id-value" id="view-name">Applicant Name</span>
+              </div>
+              <div class="id-field">
+                <span class="id-label">BRANCH</span>
+                <span class="id-value" id="view-branch">_ _ _</span>
+              </div>
+            </div>
+
+            <div class="id-card-bottom">
+              <div class="id-status">
+                <span class="status-dot"></span>
+                STATUS: PENDING_VALIDATION
+              </div>
+              <div class="id-date">2026-Cohort</div>
+            </div>
+          </div>
+          <div class="id-card-glow"></div>
+        </div>
+        <p class="id-hint">Live Member ID Preview</p>
+      </div>
+
+      <!-- Form Pane -->
+      <div class="form-pane">
+        <form
+          name="join-ccc"
+          method="POST"
+          data-netlify="true"
+          id="join-form"
+          aria-label="Join CCC application form"
+        >
+          <input type="hidden" name="form-name" value="join-ccc"/>
+          
+          <div class="form-row">
+            <div class="form-group floating">
+              <input class="form-input" id="fname" name="name" type="text" required placeholder=" " autocomplete="name"/>
+              <label class="form-label" for="fname">Full Name</label>
+              <span class="form-bar"></span>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group floating">
+              <input class="form-input" id="femail" name="email" type="email" required placeholder=" " autocomplete="email"/>
+              <label class="form-label" for="femail">Email Address</label>
+              <span class="form-bar"></span>
+            </div>
+          </div>
+
+          <div class="form-group floating">
+            <select class="form-select" id="fbranch" name="branch" required>
+              <option value="" disabled selected hidden> </option>
+              <option>CSE</option><option>ECE</option><option>IT</option>
+              <option>EEE</option><option>MECH</option><option>CIVIL</option>
+            </select>
+            <label class="form-label" for="fbranch">Branch</label>
+            <span class="form-bar"></span>
+          </div>
+
+          <div class="form-group floating">
+            <textarea class="form-textarea" id="freason" name="reason" placeholder=" "></textarea>
+            <label class="form-label" for="freason">Why do you want to join?</label>
+            <span class="form-bar"></span>
+          </div>
+
+          <button type="submit" class="form-submit" id="submit-btn">
+            <span class="btn-text">Submit Application</span>
+            <div class="btn-loading">
+              <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+            </div>
+          </button>
+        </form>
+
+        <div class="form-success" id="form-ok">
+          <div class="success-icon">✅</div>
+          <div class="success-msg">
+            <span class="terminal-prefix">></span>
+            <span id="success-text">Application received! Welcome to the cloud, applicant.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer-new">
+  <div class="footer-top">
+    <div class="footer-left">
+      <div class="footer-logo">C³ <span>SNIST</span></div>
+      <p class="footer-tagline">Cloud Community Club at Sreenidhi Institute<br>of Science and Technology.<br>#Development2Deployment</p>
+    </div>
+    
+    <div class="footer-right">
+      <div class="footer-socials">
+        <a href="https://discord.gg/dBNXWDKhrD" class="social-btn" aria-label="Discord" target="_blank" rel="noopener">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/company/cloud-community-club" class="social-btn" aria-label="LinkedIn" target="_blank" rel="noopener">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+        <a href="https://www.instagram.com/c3.snist/" class="social-btn" aria-label="Instagram" target="_blank" rel="noopener">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+        </a>
+        <a href="https://github.com/C3Snist" class="social-btn" aria-label="GitHub" target="_blank" rel="noopener">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+        </a>
+        <a href="https://x.com/C3Snist" class="social-btn" aria-label="X / Twitter" target="_blank" rel="noopener">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+  
+  <div class="footer-watermark">
+    C³SNIST
+  </div>
+
+  <div class="footer-bottom">
+    <span>© 2026 Cloud Community Club (C³) — SNIST. All rights reserved.</span>
+    <span>Built with 🤍 by Abhijeet :)</span>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
